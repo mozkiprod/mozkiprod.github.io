@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mozki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#" class="nav-logo">M<span>z</span><sup style="color:var(--yellow);font-size:.55rem;vertical-align:super">•</sup></a>
+    <!-- <ul class="nav-links">
+      <li><a href="#" class="active">Accueil</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#apropos">À Propos</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul> -->
+    <div class="nav-icons">
+      <a href="#" aria-label="X / Twitter">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <div class="divider"></div>
+      <button class="theme-btn" aria-label="Toggle theme">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="accueil">
+    <div class="hero-avatar">
+      <div class="hero-avatar-inner">M<sup>z</sup></div>
+    </div>
+    <p class="hero-greeting">Hi, I'm <span>Mozki</span></p>
+    <h1 class="hero-title">Freelance<br>Video Editor<span class="dot">.</span></h1>
+    <p class="hero-sub">
+      Passionate <strong>video editor</strong>, I turn ideas into powerful visuals.<br>
+      I use professional tools to create and customize <strong>original</strong> videos.
+    </p>
+    <div class="hero-cta-area">
+      <p class="hero-cta-label">Project idea / Any question or suggestion ?</p>
+      <a href="#contact-section" class="btn-primary">
+        Get In Touch
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- <div class="clients-band">
+    <p class="clients-label">Ils me font confiance</p>
+    <div class="clients-row">
+      <div class="client-logo">
+        <svg height="24" viewBox="0 0 120 28" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="14" cy="14" rx="13" ry="13" fill="none" stroke="white" stroke-width="2"/>
+          <circle cx="14" cy="14" r="5" fill="white"/>
+          <text x="32" y="19" font-family="Arial Black" font-weight="900" font-size="14" fill="white">DECATHLON</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="22" viewBox="0 0 80 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,22 9,0 18,22" fill="white"/>
+          <text x="22" y="19" font-family="Arial" font-weight="400" font-size="16" fill="white">Adobe</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="22" viewBox="0 0 100 22" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="2" width="30" height="18" rx="5" fill="white"/>
+          <polygon points="11,7 23,11 11,15" fill="#0d0d0f"/>
+          <text x="35" y="17" font-family="Arial" font-weight="700" font-size="15" fill="white">YouTube</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="22" viewBox="0 0 50 22" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="18" font-family="Arial Black" font-weight="900" font-size="20" fill="white" letter-spacing="-1">DJI</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="22" viewBox="0 0 90 22" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="18" font-family="Arial" font-weight="700" font-size="16" fill="white">Lenovo</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="24" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="10" cy="12" rx="9" ry="9" fill="none" stroke="white" stroke-width="2"/>
+          <ellipse cx="18" cy="12" rx="9" ry="9" fill="none" stroke="white" stroke-width="2"/>
+          <text x="30" y="18" font-family="Arial" font-weight="700" font-size="14" fill="white">Red Bull</text>
+        </svg>
+      </div>
+      <div class="client-logo">
+        <svg height="22" viewBox="0 0 90 22" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="10" fill="none" stroke="white" stroke-width="2"/>
+          <path d="M6 8 Q11 6 16 8" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M6 11 Q11 9 15 11" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M6 14 Q11 12 14 14" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <text x="26" y="17" font-family="Arial" font-weight="700" font-size="14" fill="white">Spotify</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <p class="section-tag reveal">Ce que je fais</p>
+    <h2 class="section-title reveal">Mes <span>Services</span></h2>
+    <p class="section-desc reveal">Du montage brut au film finalisé, je couvre l'ensemble du processus de post-production avec précision et créativité.</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🎬</div>
+        <p class="service-name">Montage Vidéo</p>
+        <p class="service-desc">Montage dynamique pour films publicitaires, clips, documentaires, courts-métrages ou contenus YouTube.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎨</div>
+        <p class="service-name">Motion Design</p>
+        <p class="service-desc">Animations, titres, transitions et habillages graphiques pour sublimer vos contenus visuels.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎵</div>
+        <p class="service-name">Sound Design</p>
+        <p class="service-desc">Mixage audio, sound design et synchronisation musicale pour une expérience sonore immersive.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <p class="service-name">Social Media</p>
+        <p class="service-desc">Formats courts optimisés pour Instagram Reels, TikTok, YouTube Shorts et toutes plateformes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <p class="section-tag reveal">Portfolio</p>
+    <h2 class="section-title reveal">Mes <span>Réalisations</span></h2>
+    <p class="section-desc reveal">Une sélection de projets récents pour des marques et créateurs de contenus.</p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-thumb-num">01</span>
+          <div class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#111"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-client">Decathlon</p>
+          <p class="project-title">Campaign Highlight Reel</p>
+          <div class="project-tags">
+            <span class="tag">Publicité</span><span class="tag">Motion</span><span class="tag">2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-thumb-num">02</span>
+          <div class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#111"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-client">Red Bull</p>
+          <p class="project-title">Extreme Sports Edit</p>
+          <div class="project-tags">
+            <span class="tag">Sport</span><span class="tag">Clip</span><span class="tag">2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <span class="project-thumb-num">03</span>
+          <div class="play-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#111"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-client">DJI</p>
+          <p class="project-title">Aerial Showcase</p>
+          <div class="project-tags">
+            <span class="tag">Drone</span><span class="tag">Cinematic</span><span class="tag">2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <p class="section-tag reveal">Qui suis-je ?</p>
+    <h2 class="section-title reveal">À <span>Propos</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Je suis <strong>Mozki</strong>, monteur vidéo freelance passionné par l'image et la narration visuelle. J'ai travaillé avec des marques comme <strong>Decathlon, Red Bull, Adobe</strong> et des créateurs de contenu à travers le monde.</p>
+        <p>Mon approche combine technique irréprochable et sens artistique fort. Je m'adapte à chaque projet pour livrer un rendu qui dépasse les attentes, dans les délais impartis.</p>
+        <p>Basé en France, je travaille en <strong>remote</strong> avec des clients partout dans le monde. English spoken, projets internationaux bienvenus.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Ans d'expérience</div></div>
+        <div class="stat"><div class="stat-num">80+</div><div class="stat-label">Projets livrés</div></div>
+        <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Clients réguliers</div></div>
+        <div class="stat"><div class="stat-num">7</div><div class="stat-label">Grandes marques</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-wrapper" id="contact-section">
+    <p class="section-tag reveal" style="text-align:center">Travaillons ensemble</p>
+    <h2 class="section-title reveal" style="text-align:center;max-width:600px;margin:0 auto 16px">Un projet en <span>tête</span> ?</h2>
+    <p class="section-desc reveal" style="margin:0 auto;text-align:center">Discutons de ton projet et créons quelque chose d'unique ensemble.</p>
+    <div class="reveal" style="text-align:center">
+      <a href="mailto:hello@mozki.fr" class="contact-email">hello@mozki.fr</a>
+    </div>
+    <div class="contact-socials reveal">
+      <a href="#" class="social-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Twitter / X
+      </a>
+      <a href="#" class="social-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="#" class="social-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+        YouTube
+      </a>
+    </div>
+  </div> -->
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer-copy">© 2025 <span>Mozki</span> — Tous droits réservés</p>
+    <p class="footer-copy">Fait avec <span>♥</span> par Mozki</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
