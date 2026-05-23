@@ -7,8 +7,28 @@
   opacity: 0.3; /* ajuste l'opacité selon ton goût */
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('griff.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4); /* ajuste ici */
+  z-index: -1;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* 0.5 = 50% sombre, ajuste entre 0 et 1 */
+  z-index: 0;
+  pointer-events: none;
+}
 
-
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
 
 
 
@@ -116,8 +136,8 @@ body::-webkit-scrollbar-thumb { background-color: var(--clr-rose); }
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
   position: relative;
   z-index: 9999;
 }
@@ -168,11 +188,14 @@ body::-webkit-scrollbar-thumb { background-color: var(--clr-rose); }
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
 }
-.hero__img { border-radius: 50%; width: 6rem; height: 6rem; object-fit: cover; border: 3px solid black; }
-.hero__subtitle { color: #E7B10A; font-size: var(--size-base); line-height: 0.9; }
-.hero__title { text-transform: uppercase; letter-spacing: -0.05em; line-height: 0.9; }
+.hero__img { border-radius: 50%; width: 6rem; height: 6rem; object-fit: cover; border: 2px solid black; }
+.hero__subtitle { color: #eaba34; font-size: var(--size-base); line-height: 0.9; }
+.hero__title { text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.8;   font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(60px, 12vw, 140px);
+  color: var(--clr-light);  }
 .hero__description { max-width: 60ch; font-size: var(--size-sm); color: var(--clr-slate600); }
 
 @media (min-width: 475px) {
