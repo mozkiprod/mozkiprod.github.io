@@ -1,36 +1,44 @@
-// ── Scroll Reveal ──
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 60);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-reveals.forEach(el => observer.observe(el));
+// ============================================
+// DARK MODE
+// ============================================
+const themeToggle = document.getElementById('theme-toggle');
+const themeToggleMobile = document.getElementById('theme-toggle-mobile');
 
-// ── Active nav on scroll ──
-const sections = document.querySelectorAll('section[id], .contact-wrapper');
-const navLinks = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  navLinks.forEach(a => {
-    a.classList.remove('active');
-    if (
-      a.getAttribute('href') === '#' + current ||
-      (current === 'contact-section' && a.getAttribute('href') === '#contact-section') ||
-      (current === '' && a.getAttribute('href') === '#')
-    ) {
-      a.classList.add('active');
-    }
-  });
-}, { passive: true });
+// Restaure le thème sauvegardé
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) document.body.classList.add(savedTheme);
 
-// ── Stagger service & project cards ──
-document.querySelectorAll('.service-card, .project-card').forEach((el, i) => {
-  el.style.transitionDelay = (i * 80) + 'ms';
+function handleThemeToggle() {
+  document.body.classList.toggle('light-mode');
+  if (document.body.classList.contains('light-mode')) {
+    localStorage.setItem('theme', 'light-mode');
+  } else {
+    localStorage.removeItem('theme');
+    document.body.removeAttribute('class');
+  }
+}
+
+themeToggle.addEventListener('click', handleThemeToggle);
+themeToggleMobile.addEventListener('click', handleThemeToggle);
+
+// ============================================
+// MOBILE NAV
+// ============================================
+const headerBtn = document.querySelector('.header__bars');
+const mobileNavEl = document.querySelector('.mobile-nav');
+const mobileLinks = document.querySelectorAll('.mobile-nav__link');
+let isMobileNavOpen = false;
+
+headerBtn.addEventListener('click', () => {
+  isMobileNavOpen = !isMobileNavOpen;
+  mobileNavEl.style.display = isMobileNavOpen ? 'flex' : 'none';
+  document.body.style.overflowY = isMobileNavOpen ? 'hidden' : 'auto';
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    isMobileNavOpen = false;
+    mobileNavEl.style.display = 'none';
+    document.body.style.overflowY = 'auto';
+  });
 });
