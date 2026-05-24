@@ -2,60 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="logomozkidev.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
-  <meta name="description" content="My Portfolio website" />
+  <meta name="description" content="Mozki — Freelance Video Editor" />
   <title>Mozki</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logomozkidev.png" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Erica+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Erica+One&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- <video autoplay muted loop playsinline id="bg-video">
-  <source src="interstellar.mp4" type="video/mp4">
-</video> -->
-
-<!-- <div class="overlay"></div> -->
 
   <!-- HEADER -->
   <header class="header container">
     <nav>
       <ul class="header__menu">
         <li>
-          <a class="header__link" href="https://twitter.com/mozkiprod" target="_blank">
-            <img style="width: 100%;
-  height: 100%;
-  object-fit: contain;" src="x.png" alt="logo de x" width="20" height="20">
+          <a class="header__link" href="https://twitter.com/mozkiprod" target="_blank" rel="noopener">
+            <img src="x.png" alt="Twitter / X" width="20" height="20" />
           </a>
         </li>
         <li>
-          <a class="header__link" href="https://www.instagram.com/mozkiprod/" target="_blank">
-            <img style="width: 100%;
-  height: 100%;
-  object-fit: contain;" src="insta.png" alt="logo instagram" width="20" height="20">
+          <a class="header__link" href="https://www.instagram.com/mozkiprod/" target="_blank" rel="noopener">
+            <img src="insta.png" alt="Instagram" width="20" height="20" />
           </a>
         </li>
-        <!-- <li>
-          <a class="header__link" href="https://www.buymeacoffee.com/mozkiprod" target="_blank">
-            <img id="bmac" src="coffee.png" alt="buy me a coffee" />
-          </a>
-        </li>
-        <li class="header__line"></li>
-        <li>
-          <button aria-label="theme-toggle" id="theme-toggle" class="header__sun">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-            </svg>
-          </button>
-        </li> -->
       </ul>
-      <button aria-label="mobile nav button" class="header__bars">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <button aria-label="Open navigation" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
         </svg>
       </button>
@@ -63,19 +41,11 @@
   </header>
 
   <!-- MOBILE NAV -->
-  <div class="mobile-nav">
+  <div class="mobile-nav" aria-hidden="true">
     <nav>
       <ul class="mobile-nav__menu">
-        <li><a class="mobile-nav__link" href="https://twitter.com/mozkiprod" target="_blank">Twitter</a></li>
-        <li><a class="mobile-nav__link" href="https://www.instagram.com/mozkiprod/" target="_blank">Instagram</a></li>
-        <li class="mobile-nav__link-line"></li>
-        <li>
-          <button aria-label="theme-toggle" id="theme-toggle-mobile" class="mobile-nav__sun">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-            </svg>
-          </button>
-        </li>
+        <li><a class="mobile-nav__link" href="https://twitter.com/mozkiprod" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a class="mobile-nav__link" href="https://www.instagram.com/mozkiprod/" target="_blank" rel="noopener">Instagram</a></li>
       </ul>
     </nav>
   </div>
@@ -83,24 +53,22 @@
   <!-- HERO -->
   <main>
     <section class="hero container">
-      <img class="hero__img" src="logoo2.jpg" alt="Profile picture" />
-      <h2 class="hero__subtitle"><span style="color: rgb(255, 255, 255);">Hi, I'm </span><span style="  font-family: 'Erica One';
-  font-weight: 200;  font-style: normal;">Mozki</span></h2>
+      <img class="hero__img" src="logoo2.jpg" alt="Mozki profile picture" />
+      <h2 class="hero__subtitle">
+        <span class="hero__subtitle--white">Hi, I'm </span><span class="hero__subtitle--name">Mozki</span>
+      </h2>
       <h1 class="hero__title">FREELANCE <br /> VIDEO EDITOR.</h1>
       <p class="hero__description">
-A <i>passionate</i> french video editor, I am skilled in using industry-standard softwares
-  to create and customize <i>original</i> videos.
+        A <i>passionate</i> french video editor, I am skilled in using industry-standard softwares
+        to create and customize <i>original</i> videos.
       </p>
-      <p>Project idea / Any question or suggestion ?</p>
+      <p class="hero__cta-label">Project idea / Any question or suggestion ?</p>
       <a href="mailto:mateomons20@gmail.com" class="hero__btn btn">Get in touch</a>
-      
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer container section">
-    <h3 class="footer__title"></h3>
-  </footer>
+  <footer class="footer container section"></footer>
 
   <script src="script.js"></script>
 </body>
