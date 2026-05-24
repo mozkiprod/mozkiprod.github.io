@@ -58,7 +58,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url('griff.jpg');
+  background-image: url('griff.webp');
   background-size: cover;
   background-position: center;
   filter: brightness(0.4);
